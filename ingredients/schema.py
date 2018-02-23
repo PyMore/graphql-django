@@ -2,7 +2,7 @@ import graphene
 
 from graphene_django.types import DjangoObjectType
 
-from ingredients.models import Category, Ingredient
+from .models import Category, Ingredient
 
 
 class CategoryType(DjangoObjectType):
@@ -15,7 +15,7 @@ class IngredientType(DjangoObjectType):
         model = Ingredient
 
 
-class Query(graphene.AbstractType):
+class Query(object):
     all_categories = graphene.List(CategoryType)
     all_ingredients = graphene.List(IngredientType)
 

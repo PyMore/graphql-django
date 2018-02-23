@@ -31,7 +31,7 @@ python  manage.py runserver
 
 ### CreateUser
 
-```json
+```
 
 mutation {
   createUser(username: "carloske", email: "carlskE@git.com", password: "122m11++111") {
@@ -48,7 +48,7 @@ mutation {
 
 ### All users
 
-```json
+```
 
 query {
   users {
@@ -64,7 +64,7 @@ query {
 
 ### All ingredients
 
-```json
+```
 
 query {
   allIngredients {

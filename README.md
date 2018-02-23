@@ -26,3 +26,55 @@ pip install -r requirements.txt
 python  manage.py runserver
 
 ```
+
+# Users
+
+### CreateUser
+
+```json
+
+mutation {
+  createUser(username: "carloske", email: "carlskE@git.com", password: "122m11++111") {
+    user {
+      id
+      email
+      username
+    }
+  }
+}
+
+```
+
+
+### All users
+
+```json
+
+query {
+  users {
+    id
+    email
+  }
+}
+
+```
+
+# Ingredients
+
+
+### All ingredients
+
+```json
+
+query {
+  allIngredients {
+    id
+    name
+    category {
+      id
+    }
+  }
+}
+
+```
+
